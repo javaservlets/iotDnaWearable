@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "464061767119",
+    "firebase_url": "https://forgerockip.firebaseio.com",
+    "project_id": "forgerockip",
+    "storage_bucket": "forgerockip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464061767119:android:5a3c5f72d22a568d",
+        "android_client_info": {
+          "package_name": "com.forgerock.iotdna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464061767119-21gprfki2f921ilh2e39pv2sjk3nk7qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPPbs61jH-Ynhtrs_bLkXHGu20sJcKUvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
