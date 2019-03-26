@@ -43,10 +43,10 @@ C. Update in ForgeRock the user's attribute of **sunIdentityMSISDNNumber** with 
 ## Verification on your watch
 1. At this point the Authentication Tree is waiting for the user to run the Wearable APK
 
-2. The Wearable assumes a username of 'demo'. If another name has instead been used during steps B and C above, click on the bottom of the ForgeRock logo and enter the new name
+2. The Wearable assumes a username of 'demo'. If another name has instead been used during steps B and C above, click on the bottom of the ForgeRock logo and enter the new name <br>
 ![image alt text](./images/2.png)
 
-3. Click on the ImageWare logo. This will send the serial number of the device to the Queue Reader node described above
+3. Click on the ImageWare logo. This will send the serial number of the device to the Queue Reader node described above <br>
 ![image alt text](./images/3.png)
 
 4. The browser window you opened in step #1 above should now log you all the way.
