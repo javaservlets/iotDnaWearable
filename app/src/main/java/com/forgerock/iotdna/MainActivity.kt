@@ -37,26 +37,27 @@ class MainActivity : AppCompatActivity() {
             val database = FirebaseDatabase.getInstance()// Write a message to the database
             val topic_name = database.getReference(usr) // remember this is really just firebaseurl + "/" + (usr).json
 
-            topic_name.setValue(Build.SERIAL + "^" + getTime())   // update the file
+            topic_name.setValue(Build.SERIAL + " ^ " + getTime())   // update the file
             Snackbar.make(view, "iotDna challenge sent " + usr + "@" + Build.SERIAL, Snackbar.LENGTH_LONG).setAction("Action", null).show()
         }
     }
 
-    private fun getTime(): String {
+    private fun getTime(): String? { // we'll write a timestamp along with the hex value read
         var date: Date? = null
+        var formattedDate: String? = null
         try {
             val stamp = Timestamp(System.currentTimeMillis())
-            date = Date(stamp.getTime())
+            date = Date(stamp.time)
             val sdf = SimpleDateFormat("MM/dd/yyyy h:mm:ss a")
-            sdf.setTimeZone(TimeZone.getTimeZone("UTC"))
-            val formattedDate = sdf.format(date)
-            //System.out.println(date);
+            sdf.timeZone = TimeZone.getTimeZone("UTC")
+            formattedDate = sdf.format(date)
         } catch (e: Exception) {
             e.printStackTrace()
         }
 
-        return date!!.toString()
+        return formattedDate
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
